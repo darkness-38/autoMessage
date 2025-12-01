@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color backgroundColor
+color black
+color errorColor
+color primaryColor
+color primaryDarkColor
+color purple_500
+color purple_700
+color secondaryColor
+color surfaceColor
+color teal_200
+color teal_700
+color white
+id btnDate
+id btnPickContact
+id btnSchedule
+id btnTime
+id etMessage
+id etPhoneNumber
+id tilMessage
+id tilPhoneNumber
+id tvSelectedDateTime
+layout activity_main
+string app_name
+string fill_all_fields
+string message_hint
+string permission_required
+string phone_number_hint
+string schedule_button
+string scheduled_success
+string select_date
+string select_time
+style Theme.AutoMessage
+xml backup_rules
+xml data_extraction_rules

@@ -1,0 +1,37 @@
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:generateDebugResValues
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:checkDebugAarMetadata
+
+> Task :app:mergeDebugResources FAILED
+ERROR: [color/purple_500] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml [color/purple_500] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Resource and asset merger: Duplicate resources
+ERROR: [color/purple_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml [color/purple_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Resource and asset merger: Duplicate resources
+ERROR: [color/teal_200] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml [color/teal_200] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Resource and asset merger: Duplicate resources
+ERROR: [color/teal_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml [color/teal_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Resource and asset merger: Duplicate resources
+ERROR: [color/black] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml [color/black] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Resource and asset merger: Duplicate resources
+ERROR: [color/white] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml [color/white] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Resource and asset merger: Duplicate resources
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> [color/purple_500] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml	[color/purple_500] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Error: Duplicate resources
+  [color/purple_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml	[color/purple_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Error: Duplicate resources
+  [color/teal_200] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml	[color/teal_200] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Error: Duplicate resources
+  [color/teal_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml	[color/teal_700] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Error: Duplicate resources
+  [color/black] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml	[color/black] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Error: Duplicate resources
+  [color/white] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\colors.xml	[color/white] C:\Users\hamza\Documents\autoMessage\app\src\main\res\values\themes.xml: Error: Duplicate resources
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUÝLD FAILED in 6s
+6 actionable tasks: 6 executed

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="black">#FF000000</color>
+    <color name="errorColor">#B00020</color>
+    <color name="primaryColor">#3F51B5</color>
+    <color name="primaryDarkColor">#303F9F</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="secondaryColor">#FF4081</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Auto Message</string>
+    <string name="fill_all_fields">Lütfen tüm alanları doldurun.</string>
+    <string name="message_hint">Mesajınız...</string>
+    <string name="permission_required">SMS göndermek için izin gerekiyor.</string>
+    <string name="phone_number_hint">Telefon Numarası (Örn: 5551234567)</string>
+    <string name="schedule_button">Zamanla</string>
+    <string name="scheduled_success">Mesaj başarıyla zamanlandı!</string>
+    <string name="select_date">Tarih Seç</string>
+    <string name="select_time">Saat Seç</string>
+    <style name="Theme.AutoMessage" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+</resources>
