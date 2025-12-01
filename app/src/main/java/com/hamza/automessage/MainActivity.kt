@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity() {
         etMessage = findViewById(R.id.etMessage)
         tvSelectedDateTime = findViewById(R.id.tvSelectedDateTime)
         btnDate = findViewById(R.id.btnDate)
+        btnTime = findViewById(R.id.btnTime)
         btnSchedule = findViewById(R.id.btnSchedule)
         btnPickContact = findViewById(R.id.btnPickContact)
         btnListMessages = findViewById(R.id.btnListMessages)
