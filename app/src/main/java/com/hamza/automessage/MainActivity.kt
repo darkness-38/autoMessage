@@ -21,7 +21,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import java.util.Calendar
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var etPhoneNumber: EditText
@@ -77,27 +76,75 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private lateinit var btnListMessages: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         etPhoneNumber = findViewById(R.id.etPhoneNumber)
         etMessage = findViewById(R.id.etMessage)
-        tvSelectedDateTime = findViewById<TextView>(R.id.tvSelectedDateTime)
-        btnDate = findViewById<Button>(R.id.btnDate)
-        btnTime = findViewById<Button>(R.id.btnTime)
-        btnSchedule = findViewById<Button>(R.id.btnSchedule)
-        btnPickContact = findViewById<ImageButton>(R.id.btnPickContact)
+        tvSelectedDateTime = findViewById(R.id.tvSelectedDateTime)
+        btnDate = findViewById(R.id.btnDate)
+        btnSchedule = findViewById(R.id.btnSchedule)
+        btnPickContact = findViewById(R.id.btnPickContact)
+        btnListMessages = findViewById(R.id.btnListMessages)
+
+        // Giriş Animasyonları
+        val title = findViewById<TextView>(R.id.tvTitle)
+        val cardForm = findViewById<androidx.cardview.widget.CardView>(R.id.cardForm)
+        val cardDate = findViewById<androidx.cardview.widget.CardView>(R.id.cardDate)
+
+        title.alpha = 0f
+        title.translationY = -50f
+        title.animate().alpha(1f).translationY(0f).setDuration(800).setStartDelay(100).start()
+        
+        btnListMessages.setOnClickListener {
+            startActivity(Intent(this, ScheduledMessagesActivity::class.java))
+        }
+
+        cardForm.alpha = 0f
+        cardForm.translationY = 100f
+        cardForm.animate().alpha(1f).translationY(0f).setDuration(800).setStartDelay(300).start()
+
+        cardDate.alpha = 0f
+        cardDate.translationY = 100f
+        cardDate.animate().alpha(1f).translationY(0f).setDuration(800).setStartDelay(500).start()
+
+        btnSchedule.alpha = 0f
+        btnSchedule.scaleX = 0.5f
+        btnSchedule.scaleY = 0.5f
+        btnSchedule.animate().alpha(1f).scaleX(1f).scaleY(1f).setDuration(600).setStartDelay(700).setInterpolator(android.view.animation.OvershootInterpolator()).start()
 
         updateDateTimeDisplay()
 
-        btnDate.setOnClickListener { showDatePicker() }
-        btnTime.setOnClickListener { showTimePicker() }
-        btnSchedule.setOnClickListener { scheduleMessage() }
-        btnPickContact.setOnClickListener { pickContact() }
+        btnDate.setOnClickListener { 
+            it.animate().scaleX(0.95f).scaleY(0.95f).setDuration(100).withEndAction { 
+                it.animate().scaleX(1f).scaleY(1f).setDuration(100).start() 
+            }.start()
+            showDatePicker() 
+        }
+        btnTime.setOnClickListener { 
+            it.animate().scaleX(0.95f).scaleY(0.95f).setDuration(100).withEndAction { 
+                it.animate().scaleX(1f).scaleY(1f).setDuration(100).start() 
+            }.start()
+            showTimePicker() 
+        }
+        btnSchedule.setOnClickListener { 
+            it.animate().scaleX(0.95f).scaleY(0.95f).setDuration(100).withEndAction { 
+                it.animate().scaleX(1f).scaleY(1f).setDuration(100).start() 
+            }.start()
+            scheduleMessage() 
+        }
+        btnPickContact.setOnClickListener { 
+            it.animate().rotation(360f).setDuration(500).start()
+            pickContact() 
+        }
 
         checkPermissions()
     }
+
+    // ... (pickContact, showDatePicker, showTimePicker, updateDateTimeDisplay, checkPermissions aynı kalacak)
 
     private fun pickContact() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
@@ -193,11 +240,14 @@ class MainActivity : AppCompatActivity() {
                 }
                 startActivity(intent)
                 Toast.makeText(this, "Lütfen pil kısıtlamasını kaldırın", Toast.LENGTH_LONG).show()
-                // Kullanıcı izni verene kadar beklemeyelim, alarmı yine de kuralım ama uyaralım.
             }
         }
 
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        
+        // Benzersiz ID oluştur
+        val requestCode = System.currentTimeMillis().toInt()
+        
         val intent = Intent(this, AlarmReceiver::class.java).apply {
             putExtra("PHONE_NUMBER", phoneNumber)
             putExtra("MESSAGE", message)
@@ -205,7 +255,7 @@ class MainActivity : AppCompatActivity() {
 
         val pendingIntent = PendingIntent.getBroadcast(
             this,
-            0,
+            requestCode, // Benzersiz RequestCode
             intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
@@ -216,6 +266,17 @@ class MainActivity : AppCompatActivity() {
             } else {
                 alarmManager.setExact(AlarmManager.RTC_WAKEUP, selectedCalendar.timeInMillis, pendingIntent)
             }
+            
+            // Mesajı kaydet
+            val scheduledMessage = ScheduledMessage(
+                id = requestCode.toLong(),
+                phoneNumber = phoneNumber,
+                message = message,
+                timestamp = selectedCalendar.timeInMillis,
+                requestCode = requestCode
+            )
+            MessageManager(this).saveMessage(scheduledMessage)
+            
             Toast.makeText(this, getString(R.string.scheduled_success), Toast.LENGTH_SHORT).show()
         } catch (e: SecurityException) {
             Toast.makeText(this, "Alarm izni hatası: ${e.message}", Toast.LENGTH_SHORT).show()

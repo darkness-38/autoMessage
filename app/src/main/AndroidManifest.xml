@@ -29,6 +29,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ScheduledMessagesActivity" />
+
         <receiver android:name=".AlarmReceiver" android:enabled="true" android:exported="false" />
         <receiver android:name=".SmsSentReceiver" android:exported="true">
             <intent-filter>
