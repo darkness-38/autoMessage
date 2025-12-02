@@ -1,10 +1,13 @@
 <resources>
-    <string name="app_name">Auto Message</string>
-    <string name="phone_number_hint">Telefon Numarası (Örn: 5551234567)</string>
-    <string name="message_hint">Mesajınız...</string>
-    <string name="select_date">Tarih Seç</string>
-    <string name="select_time">Saat Seç</string>
-    <string name="schedule_button">Zamanla</string>
+    <string name="app_name">Otomatik Mesaj</string>
+    <string name="phone_number_hint">Telefon numarası girin</string>
+    <string name="phone_number_label">Kime</string>
+    <string name="message_hint">Mesajınızı buraya yazın...</string>
+    <string name="message_label">Mesajınız</string>
+    <string name="date_label">Tarih</string>
+    <string name="time_label">Saat</string>
+    <string name="schedule_button">Mesajı Zamanla</string>
+    <string name="view_scheduled_button">Zamanlanan Mesajları Görüntüle</string>
     <string name="permission_required">SMS göndermek için izin gerekiyor.</string>
     <string name="scheduled_success">Mesaj başarıyla zamanlandı!</string>
     <string name="fill_all_fields">Lütfen tüm alanları doldurun.</string>

@@ -6,16 +6,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <!-- Modern Palette -->
-    <color name="primaryColor">#6C63FF</color>
-    <color name="primaryDarkColor">#5A52D5</color>
-    <color name="secondaryColor">#FF6584</color>
-    <color name="backgroundColor">#F0F2F5</color>
-    <color name="surfaceColor">#FFFFFF</color>
-    <color name="errorColor">#FF5252</color>
-    
-    <!-- Gradient Colors -->
-    <color name="gradientStart">#6C63FF</color>
-    <color name="gradientEnd">#FF6584</color>
-    <color name="glassBackground">#CCFFFFFF</color>
+    <!-- Design Palette -->
+    <color name="primary">#137fec</color>
+    <color name="background_light">#f6f7f8</color>
+    <color name="background_dark">#101922</color>
+    <color name="foreground_light">#ffffff</color>
+    <color name="foreground_dark">#1c2127</color>
+    <color name="border_light">#e5e7eb</color>
+    <color name="border_dark">#3b4754</color>
+    <color name="text_light">#111827</color>
+    <color name="text_dark">#ffffff</color>
+    <color name="text_secondary_light">#6b7280</color>
+    <color name="text_secondary_dark">#9dabb9</color>
 </resources>

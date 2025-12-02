@@ -18,6 +18,10 @@ Auto Message is a modern Android application that allows users to schedule SMS m
     *   Handles battery optimization to ensure background execution.
     *   Provides feedback on SMS delivery status.
 
+## Screenshots
+
+*(Screenshots can be added here)*
+
 ## Getting Started
 
 ### Prerequisites

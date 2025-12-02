@@ -1,34 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="backgroundColor">#F0F2F5</color>
+    <color name="background_dark">#101922</color>
+    <color name="background_light">#f6f7f8</color>
     <color name="black">#FF000000</color>
-    <color name="errorColor">#FF5252</color>
-    <color name="glassBackground">#CCFFFFFF</color>
-    <color name="gradientEnd">#FF6584</color>
-    <color name="gradientStart">#6C63FF</color>
-    <color name="primaryColor">#6C63FF</color>
-    <color name="primaryDarkColor">#5A52D5</color>
+    <color name="border_dark">#3b4754</color>
+    <color name="border_light">#e5e7eb</color>
+    <color name="foreground_dark">#1c2127</color>
+    <color name="foreground_light">#ffffff</color>
+    <color name="primary">#137fec</color>
     <color name="purple_500">#6200EE</color>
     <color name="purple_700">#3700B3</color>
-    <color name="secondaryColor">#FF6584</color>
-    <color name="surfaceColor">#FFFFFF</color>
     <color name="teal_200">#03DAC5</color>
     <color name="teal_700">#018786</color>
+    <color name="text_dark">#ffffff</color>
+    <color name="text_light">#111827</color>
+    <color name="text_secondary_dark">#9dabb9</color>
+    <color name="text_secondary_light">#6b7280</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Auto Message</string>
+    <string name="app_name">Otomatik Mesaj</string>
+    <string name="date_label">Tarih</string>
     <string name="fill_all_fields">Lütfen tüm alanları doldurun.</string>
-    <string name="message_hint">Mesajınız...</string>
+    <string name="message_hint">Mesajınızı buraya yazın...</string>
+    <string name="message_label">Mesajınız</string>
     <string name="permission_required">SMS göndermek için izin gerekiyor.</string>
-    <string name="phone_number_hint">Telefon Numarası (Örn: 5551234567)</string>
-    <string name="schedule_button">Zamanla</string>
+    <string name="phone_number_hint">Telefon numarası girin</string>
+    <string name="phone_number_label">Kime</string>
+    <string name="schedule_button">Mesajı Zamanla</string>
     <string name="scheduled_success">Mesaj başarıyla zamanlandı!</string>
-    <string name="select_date">Tarih Seç</string>
-    <string name="select_time">Saat Seç</string>
-    <style name="Theme.AutoMessage" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <string name="time_label">Saat</string>
+    <string name="view_scheduled_button">Zamanlanan Mesajları Görüntüle</string>
+    <style name="Theme.AutoMessage" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
-        <item name="colorPrimary">@color/primaryColor</item>
-        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
-        <item name="colorAccent">@color/secondaryColor</item>
-        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        <item name="android:windowBackground">@color/background_light</item>
     </style>
 </resources>

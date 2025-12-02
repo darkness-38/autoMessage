@@ -24,6 +24,14 @@ class ScheduledMessagesActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         
+        findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
+        findViewById<ImageButton>(R.id.btnAdd).setOnClickListener {
+            finish() // Return to main activity to add new
+        }
+        
         loadMessages()
     }
 
@@ -59,8 +67,8 @@ class ScheduledMessagesActivity : AppCompatActivity() {
             holder.tvPhoneNumber.text = message.phoneNumber
             holder.tvMessage.text = message.message
             
-            val format = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault())
-            holder.tvDate.text = format.format(java.util.Date(message.timestamp))
+            val timeFormat = java.text.SimpleDateFormat("HH:mm", java.util.Locale.getDefault())
+            holder.tvDate.text = timeFormat.format(java.util.Date(message.timestamp))
 
             holder.btnDelete.setOnClickListener {
                 onDeleteClick(message)

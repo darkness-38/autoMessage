@@ -1,34 +1,46 @@
 [
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/layout_item_scheduled_message.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/layout/item_scheduled_message.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\drawable_bg_button_primary.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\drawable\\bg_button_primary.xml"
     },
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/xml_data_extraction_rules.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\layout_activity_scheduled_messages.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\layout\\activity_scheduled_messages.xml"
     },
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/layout_activity_scheduled_messages.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/layout/activity_scheduled_messages.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\drawable\\bg_input.xml"
     },
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/drawable_bg_card_glass.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/drawable/bg_card_glass.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/xml_backup_rules.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\drawable_bg_card_glass.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\drawable\\bg_card_glass.xml"
     },
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/drawable_bg_button_outlined.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/drawable/bg_button_outlined.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/layout_activity_main.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/layout/activity_main.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\drawable_bg_gradient.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\drawable\\bg_gradient.xml"
     },
     {
-        "merged": "com.hamza.automessage.app-merged_res-28:/drawable_bg_gradient.xml.flat",
-        "source": "com.hamza.automessage.app-main-30:/drawable/bg_gradient.xml"
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\drawable_bg_button_secondary.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\drawable\\bg_button_secondary.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\drawable_bg_button_outlined.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\drawable\\bg_button_outlined.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-merged_res-28:\\layout_item_scheduled_message.xml.flat",
+        "source": "C:\\Users\\hamza\\.gradle\\daemon\\8.5\\com.hamza.automessage.app-main-30:\\layout\\item_scheduled_message.xml"
     }
 ]

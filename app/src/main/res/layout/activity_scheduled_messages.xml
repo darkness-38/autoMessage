@@ -1,31 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_gradient"
+    android:background="@color/background_light"
     tools:context=".ScheduledMessagesActivity">
 
-    <TextView
+    <!-- Header -->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Zamanlanmış Mesajlar"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:padding="24dp"
-        android:shadowColor="#40000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="4"/>
+        android:layout_height="56dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="#CCF6F7F8">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/text_light"
+            android:contentDescription="Geri"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Zamanlanan Mesajlar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_light"/>
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_input_add"
+            app:tint="@color/primary"
+            android:contentDescription="Ekle"/>
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp"
+        android:padding="16dp"
         android:clipToPadding="false"/>
 
 </LinearLayout>

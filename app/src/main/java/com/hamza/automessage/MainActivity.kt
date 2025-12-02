@@ -25,11 +25,12 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var etPhoneNumber: EditText
     private lateinit var etMessage: EditText
-    private lateinit var tvSelectedDateTime: TextView
+    // private lateinit var tvSelectedDateTime: TextView // Removed
     private lateinit var btnDate: Button
     private lateinit var btnTime: Button
     private lateinit var btnSchedule: Button
     private lateinit var btnPickContact: ImageButton
+    private lateinit var btnListMessages: Button // Changed from ImageButton
 
     private var selectedCalendar: Calendar = Calendar.getInstance()
 
@@ -76,15 +77,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private lateinit var btnListMessages: ImageButton
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         etPhoneNumber = findViewById(R.id.etPhoneNumber)
         etMessage = findViewById(R.id.etMessage)
-        tvSelectedDateTime = findViewById(R.id.tvSelectedDateTime)
+        // tvSelectedDateTime = findViewById(R.id.tvSelectedDateTime) // Removed
         btnDate = findViewById(R.id.btnDate)
         btnTime = findViewById(R.id.btnTime)
         btnSchedule = findViewById(R.id.btnSchedule)
@@ -93,8 +92,8 @@ class MainActivity : AppCompatActivity() {
 
         // Giriş Animasyonları
         val title = findViewById<TextView>(R.id.tvTitle)
-        val cardForm = findViewById<androidx.cardview.widget.CardView>(R.id.cardForm)
-        val cardDate = findViewById<androidx.cardview.widget.CardView>(R.id.cardDate)
+        val cardForm = findViewById<android.view.View>(R.id.cardForm) // Changed to View
+        val cardDate = findViewById<android.view.View>(R.id.cardDate) // Changed to View
 
         title.alpha = 0f
         title.translationY = -50f
@@ -182,8 +181,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateDateTimeDisplay() {
-        val format = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.getDefault())
-        tvSelectedDateTime.text = "Seçilen: ${format.format(selectedCalendar.time)}"
+        val dateFormat = java.text.SimpleDateFormat("d MMMM yyyy", java.util.Locale("tr"))
+        val timeFormat = java.text.SimpleDateFormat("HH:mm", java.util.Locale.getDefault())
+        
+        btnDate.text = dateFormat.format(selectedCalendar.time)
+        btnTime.text = timeFormat.format(selectedCalendar.time)
     }
 
     private fun checkPermissions() {
@@ -252,6 +254,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, AlarmReceiver::class.java).apply {
             putExtra("PHONE_NUMBER", phoneNumber)
             putExtra("MESSAGE", message)
+            putExtra("MESSAGE_ID", requestCode.toLong())
         }
 
         val pendingIntent = PendingIntent.getBroadcast(
