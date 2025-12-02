@@ -6,16 +6,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <!-- Design Palette -->
+    <!-- Dark Design Palette -->
     <color name="primary">#137fec</color>
-    <color name="background_light">#f6f7f8</color>
-    <color name="background_dark">#101922</color>
-    <color name="foreground_light">#ffffff</color>
-    <color name="foreground_dark">#1c2127</color>
-    <color name="border_light">#e5e7eb</color>
-    <color name="border_dark">#3b4754</color>
-    <color name="text_light">#111827</color>
-    <color name="text_dark">#ffffff</color>
-    <color name="text_secondary_light">#6b7280</color>
-    <color name="text_secondary_dark">#9dabb9</color>
+    <color name="background">#101922</color> <!-- background-dark -->
+    <color name="foreground">#1c2127</color> <!-- foreground-dark -->
+    <color name="border">#3b4754</color> <!-- border-dark -->
+    <color name="text_primary">#ffffff</color> <!-- text-dark -->
+    <color name="text_secondary">#9dabb9</color> <!-- text-secondary-dark -->
 </resources>

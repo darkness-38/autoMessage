@@ -1,30 +1,28 @@
 R_DEF: Internal format may change without notice
 local
-color background_dark
-color background_light
+color background
 color black
-color border_dark
-color border_light
-color foreground_dark
-color foreground_light
+color border
+color foreground
 color primary
 color purple_500
 color purple_700
 color teal_200
 color teal_700
-color text_dark
-color text_light
-color text_secondary_dark
-color text_secondary_light
+color text_primary
+color text_secondary
 color white
 drawable bg_button_primary
 drawable bg_button_secondary
 drawable bg_input
+drawable bg_input_left
+drawable bg_input_right
 id btnAdd
 id btnBack
 id btnDate
 id btnDelete
-id btnListMessages
+id btnGoToList
+id btnGoToSchedule
 id btnPickContact
 id btnSchedule
 id btnTime
@@ -38,6 +36,7 @@ id tvMessage
 id tvPhoneNumber
 id tvSelectedDateTime
 id tvTitle
+layout activity_home
 layout activity_main
 layout activity_scheduled_messages
 layout item_scheduled_message

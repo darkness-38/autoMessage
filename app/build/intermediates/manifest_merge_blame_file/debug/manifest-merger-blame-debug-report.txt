@@ -45,7 +45,7 @@
 24-->[androidx.core:core:1.12.0] C:\Users\hamza\.gradle\caches\transforms-3\49bc569e60fab80a2adb3ddf56e74042\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 25
 26    <application
-26-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:14:5-41:19
+26-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:14:5-42:19
 27        android:allowBackup="true"
 27-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:15:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -64,7 +64,7 @@
 35-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:20:9-49
 36        <activity
 36-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:23:9-30:20
-37            android:name="com.hamza.automessage.MainActivity"
+37            android:name="com.hamza.automessage.HomeActivity"
 37-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:24:13-41
 38            android:exported="true" >
 38-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:25:13-36
@@ -79,53 +79,56 @@
 42-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:28:27-74
 43            </intent-filter>
 44        </activity>
-45        <activity android:name="com.hamza.automessage.ScheduledMessagesActivity" />
-45-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:9-63
-45-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:19-60
-46
-47        <receiver
-47-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:9-99
-48            android:name="com.hamza.automessage.AlarmReceiver"
-48-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:19-48
-49            android:enabled="true"
-49-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:49-71
-50            android:exported="false" />
-50-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:72-96
-51        <receiver
-51-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:9-39:20
-52            android:name="com.hamza.automessage.SmsSentReceiver"
-52-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:19-50
-53            android:exported="true" >
-53-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:51-74
-54            <intent-filter>
-54-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:13-38:29
-55                <action android:name="SMS_SENT" />
-55-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:37:17-51
-55-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:37:25-48
-56            </intent-filter>
-57        </receiver>
-58
-59        <provider
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-60            android:name="androidx.startup.InitializationProvider"
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-61            android:authorities="com.hamza.automessage.androidx-startup"
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-62            android:exported="false" >
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-63            <meta-data
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-65                android:value="androidx.startup" />
-65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-66            <meta-data
-66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hamza\.gradle\caches\transforms-3\4b3439ed17f7a6af343b4674547179cf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hamza\.gradle\caches\transforms-3\4b3439ed17f7a6af343b4674547179cf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-68                android:value="androidx.startup" />
-68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hamza\.gradle\caches\transforms-3\4b3439ed17f7a6af343b4674547179cf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-69        </provider>
-70    </application>
-71
-72</manifest>
+45        <activity android:name="com.hamza.automessage.MainActivity" />
+45-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:9-50
+45-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:19-47
+46        <activity android:name="com.hamza.automessage.ScheduledMessagesActivity" />
+46-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:33:9-63
+46-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:33:19-60
+47
+48        <receiver
+48-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:9-99
+49            android:name="com.hamza.automessage.AlarmReceiver"
+49-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:19-48
+50            android:enabled="true"
+50-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:49-71
+51            android:exported="false" />
+51-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:72-96
+52        <receiver
+52-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:9-40:20
+53            android:name="com.hamza.automessage.SmsSentReceiver"
+53-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:19-50
+54            android:exported="true" >
+54-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:51-74
+55            <intent-filter>
+55-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:37:13-39:29
+56                <action android:name="SMS_SENT" />
+56-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:38:17-51
+56-->C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:38:25-48
+57            </intent-filter>
+58        </receiver>
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+62            android:authorities="com.hamza.automessage.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\590ef5785fbe6100a6fe4b54a17f9ced\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hamza\.gradle\caches\transforms-3\4b3439ed17f7a6af343b4674547179cf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hamza\.gradle\caches\transforms-3\4b3439ed17f7a6af343b4674547179cf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hamza\.gradle\caches\transforms-3\4b3439ed17f7a6af343b4674547179cf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+70        </provider>
+71    </application>
+72
+73</manifest>

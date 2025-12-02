@@ -21,7 +21,7 @@
         tools:targetApi="31">
         
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +29,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MainActivity" />
         <activity android:name=".ScheduledMessagesActivity" />
 
         <receiver android:name=".AlarmReceiver" android:enabled="true" android:exported="false" />

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\hamza\.gradle\caches\transforms-3\82b96f3e4e4ea522cfdcd317352ed9ab\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hamza\.gradle\caches\transforms-3\8f4f2b5e856b37a651c76613e1167454\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\hamza\.gradle\caches\transforms-3\9f6d51c3a39210781047e2c223c9a6bc\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -87,8 +87,8 @@ ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:12:22-65
 application
-ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:14:5-41:19
-INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:14:5-41:19
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:14:5-42:19
+INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:14:5-42:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\hamza\.gradle\caches\transforms-3\82b96f3e4e4ea522cfdcd317352ed9ab\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\hamza\.gradle\caches\transforms-3\82b96f3e4e4ea522cfdcd317352ed9ab\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hamza\.gradle\caches\transforms-3\8f4f2b5e856b37a651c76613e1167454\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -121,7 +121,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hamza\.gradle\cach
 		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:20:9-49
 	android:dataExtractionRules
 		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:16:9-65
-activity#com.hamza.automessage.MainActivity
+activity#com.hamza.automessage.HomeActivity
 ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:23:9-30:20
 	android:exported
 		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:25:13-36
@@ -137,30 +137,34 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
 		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:28:27-74
+activity#com.hamza.automessage.MainActivity
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:9-50
+	android:name
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:19-47
 activity#com.hamza.automessage.ScheduledMessagesActivity
-ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:9-63
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:33:9-63
 	android:name
-		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:32:19-60
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:33:19-60
 receiver#com.hamza.automessage.AlarmReceiver
-ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:9-99
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:9-99
 	android:enabled
-		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:49-71
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:49-71
 	android:exported
-		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:72-96
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:72-96
 	android:name
-		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:34:19-48
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:19-48
 receiver#com.hamza.automessage.SmsSentReceiver
-ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:9-39:20
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:9-40:20
 	android:exported
-		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:51-74
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:51-74
 	android:name
-		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:35:19-50
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:19-50
 intent-filter#action:name:SMS_SENT
-ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:36:13-38:29
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:37:13-39:29
 action#SMS_SENT
-ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:37:17-51
+ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:38:17-51
 	android:name
-		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:37:25-48
+		ADDED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml:38:25-48
 uses-sdk
 INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\hamza\Documents\autoMessage\app\src\main\AndroidManifest.xml

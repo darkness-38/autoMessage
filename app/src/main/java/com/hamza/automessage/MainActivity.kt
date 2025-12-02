@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
         btnTime = findViewById(R.id.btnTime)
         btnSchedule = findViewById(R.id.btnSchedule)
         btnPickContact = findViewById(R.id.btnPickContact)
-        btnListMessages = findViewById(R.id.btnListMessages)
+        // btnListMessages = findViewById(R.id.btnListMessages)
 
         // Giriş Animasyonları
         val title = findViewById<TextView>(R.id.tvTitle)
@@ -99,9 +99,9 @@ class MainActivity : AppCompatActivity() {
         title.translationY = -50f
         title.animate().alpha(1f).translationY(0f).setDuration(800).setStartDelay(100).start()
         
-        btnListMessages.setOnClickListener {
-            startActivity(Intent(this, ScheduledMessagesActivity::class.java))
-        }
+        // btnListMessages.setOnClickListener {
+        //     startActivity(Intent(this, ScheduledMessagesActivity::class.java))
+        // }
 
         cardForm.alpha = 0f
         cardForm.translationY = 100f

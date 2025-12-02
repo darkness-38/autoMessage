@@ -1332,15 +1332,13 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
-color background_dark
+color background
 color background_floating_material_dark
 color background_floating_material_light
-color background_light
 color background_material_dark
 color background_material_light
 color black
-color border_dark
-color border_light
+color border
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1399,8 +1397,7 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
-color foreground_dark
-color foreground_light
+color foreground
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
@@ -2055,10 +2052,8 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color teal_200
 color teal_700
-color text_dark
-color text_light
-color text_secondary_dark
-color text_secondary_light
+color text_primary
+color text_secondary
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -2921,6 +2916,8 @@ drawable avd_show_password
 drawable bg_button_primary
 drawable bg_button_secondary
 drawable bg_input
+drawable bg_input_left
+drawable bg_input_right
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3129,7 +3126,8 @@ id btnAdd
 id btnBack
 id btnDate
 id btnDelete
-id btnListMessages
+id btnGoToList
+id btnGoToSchedule
 id btnPickContact
 id btnSchedule
 id btnTime
@@ -3653,6 +3651,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_home
 layout activity_main
 layout activity_scheduled_messages
 layout custom_dialog
